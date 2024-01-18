@@ -7,7 +7,7 @@ import cors from "cors";
 
 const app = express();
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://mern-deploy-frontend-tm47.onrender.com",
 };
 // Middleware for parsing request body
 app.use(express.json());
@@ -16,7 +16,7 @@ app.get("/", cors(), (request, response) => {
   console.log(request);
   return response
     .status(201)
-    .json({ message: "Welcome To MERN Stack Tutorial" });
+    .json({ message: "Welcome To MERN Stack Book library " });
 });
 
 let con = process.env.mongoDBURL;
