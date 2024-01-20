@@ -1,6 +1,8 @@
 import express from "express";
 
 import mongoose from "mongoose";
+//import { UserModel } from "./models/User.js";
+
 import dotenv from "dotenv";
 dotenv.config();
 import cors from "cors";
